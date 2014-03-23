@@ -1,0 +1,145 @@
+%% start of file `template-zh.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,kai]{moderncv}   % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv 主题
+\moderncvstyle{banking}                        % 选项参数是 ‘casual’, ‘classic’, ‘oldstyle’ 和 ’banking’
+\moderncvcolor{red}                          % 选项参数是 ‘blue’ (默认)、‘orange’、‘green’、‘red’、‘purple’ 和 ‘grey’
+%\nopagenumbers{}                             % 消除注释以取消自动页码生成功能
+
+% 字符编码
+\usepackage[utf8]{inputenc}                   % 替换你正在使用的编码
+\usepackage{CJKutf8}
+
+% 调整页面出血
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}           % 如果你希望改变日期栏的宽度
+
+% 个人信息
+\name{陈}{龙}
+%\title{简历题目 (可选项)}                     % 可选项、如不需要可删除本行
+%\address{天府软件园}{成都}{邮编：611731}           % 可选项、如不需要可删除本行
+\phone[mobile]{(+86)~136~4806~2548}              % 可选项、如不需要可删除本行
+%\phone[fixed]{+2~(345)~678~901}               % 可选项、如不需要可删除本行
+%\phone[fax]{+3~(456)~789~012}                 % 可选项、如不需要可删除本行
+\email{yuerguang.cl@gmail.com}                    % 可选项、如不需要可删除本行
+\homepage{yuercl.github.io}                  % 可选项、如不需要可删除本行
+\extrainfo{擅长语言(Java、Bash、PHP、SQL、C)}                 % 可选项、如不需要可删除本行
+\photo[64pt][0.4pt]{picture}                  % ‘64pt’是图片必须压缩至的高度、‘0.4pt‘是图片边框的宽度 (如不需要可调节至0pt)、’picture‘ 是图片文件的名字;可选项、如不需要可删除本行
+\quote{乐于学习,勇于挑战自我}                          % 可选项、如不需要可删除本行
+
+% 显示索引号;仅用于在简历中使用了引言
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+
+% 分类索引
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            内容
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK}{UTF8}{gbsn}                       % 详情参阅CJK文件包
+\begin{CJK}{UTF8}{kai}                       % 详情参阅CJK文件包
+\maketitle
+
+\section{教育背景}
+\cventry{2009年 -- 2013年}{数学与应用数学}{电子科技大学}{成都}{\textit{理学学士}}{2010年获三等奖学金}  % 第3到第6编码可留白
+
+%\section{毕业论文}
+%\cvitem{CRM}{\emph{题目}}
+%\cvitem{导师}{导师}
+%\cvitem{说明}{\small 论文简介}
+
+\section{工作背景}
+\subsection{正式工作}
+\cventry{2013年3月 -- 2014年至今}{软件研发工程师}{成都神州通付科技有限公司}{成都}{}{\newline{}%
+工作内容:%
+\begin{itemize}%
+\item 提供App后端支持
+\item 手机端以及后台系统协议制定与实现
+\item 为项目提供数据支持
+\item 车牌识别研究(基于OpenCV)
+\item 编写后台管理系统
+\end{itemize}}
+
+\subsection{实习全职}
+\cventry{2012年7月 -- 2013年2月}{软件研发工程师}{北京知行九易科技有限公司}{北京\&成都}{}{
+工作内容:%
+\begin{itemize}%
+    \item 电子商务供应链模块开发:
+          \begin{itemize}%
+              \item 设计框架
+                \begin{itemize}
+                    \item J2EE(SSH),EasyUI,jQuery,Maven;
+                    \item MQ消息中间件,工作流引擎,规则引擎;
+                    \item 项目采用敏捷开发方式;
+                \end{itemize}
+              \item 持续时间,六个月;
+              \item 完成情况
+                \begin{itemize}
+                    \item 完成采购相关流程,竞拍采购原型,部分前端页面编写;
+                \end{itemize}
+          \end{itemize}
+\end{itemize}}
+
+\subsection{其他}
+\cventry{2011年9月 -- 2012年6月}{软件研发工程师}{成都市国科海博计算机系统公司}{成都}{}{校企合作公司,学习SOA相关研究,完成基于WOS2中间件平台的人力资源管理项目演示版,涉及WSO2中间件平台的Enterprise Service Bus,Data Service Bus等}
+
+
+\section{语言技能}
+%\cvitemwithcomment{全国大学英语四级考试}{通过}{}
+\cvitem{\textsf{全国大学英语四级考试}}{通过}{顺利阅读英文资料}
+%\cvitemwithcomment{语言 2}{水平}{评价}
+%\cvitemwithcomment{语言 3}{水平}{评价}
+
+\section{计算机技能}
+%\cvdoubleitem{团队开发}{XXX, YYY, ZZZ}{类别 5}{XXX, YYY, ZZZ}
+\cvdoubleitem{操作系统}{Linux(Ubuntu\&CentOS), Windows}{大学期间Ubuntu作为日常系统，工作后再迁回Win，因为OA}{}
+\cvdoubleitem{团队开发}{Subversion, Git}{}{}
+\cvdoubleitem{编程语言}{Java, Jquery, Shell}{}{}
+\cvdoubleitem{开发工具}{Vim, Eclipse, IntelliJ IDEA}{}{}
+\cvdoubleitem{其他工具}{MySQL, Markdown, \LaTeX}{}{} 
+
+\section{个人兴趣}
+\cvitem{自行车}{\small 说明} 
+
+\section{其他 1}
+\cvlistitem{项目 1}
+\cvlistitem{项目 2}
+\cvlistitem{项目 3}
+
+\renewcommand{\listitemsymbol}{-}             % 改变列表符号
+
+\section{其他 2}
+\cvlistdoubleitem{项目 1}{项目 4}
+\cvlistdoubleitem{项目 2}{项目 5\cite{book1}}
+\cvlistdoubleitem{项目 3}{}
+
+% 来自BibTeX文件但不使用multibib包的出版物
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% BibTeX的数字标签
+%\nocite{*}
+%\bibliographystyle{plain}
+%\bibliography{publications}                    % 'publications' 是BibTeX文件的文件名
+
+% 来自BibTeX文件并使用multibib包的出版物
+%\section{出版物}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}               % 'publications' 是BibTeX文件的文件名
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}               % 'publications' 是BibTeX文件的文件名
+
+\clearpage\end{CJK}
+\end{document}
+
+
+%% 文件结尾 `template-zh.tex'.
