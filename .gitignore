@@ -30,6 +30,15 @@
 *.vrb
 *.xdy
 *.tdo
+
 *.bat
 *.bak
 *.pdf
+*.4ct
+*.4tc
+*.idv
+*.tmp
+*.xref
+*.sav
+*.env
+*.lg
