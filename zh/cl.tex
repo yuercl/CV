@@ -28,7 +28,7 @@
 % 个人信息
 \name{陈}{龙}
 %\title{简历题目 (可选项)}                     % 可选项、如不需要可删除本行
-%\address{天府软件园}{成都}{邮编：611731}           % 可选项、如不需要可删除本行
+\address{天府软件园(成都)}{邮编：610041}{}           % 可选项、如不需要可删除本行
 \phone[mobile]{(+86)~136~4806~2548}              % 可选项、如不需要可删除本行
 %\phone[fixed]{+2~(345)~678~901}               % 可选项、如不需要可删除本行
 %\phone[fax]{+3~(456)~789~012}                 % 可选项、如不需要可删除本行
@@ -54,6 +54,11 @@
 \begin{CJK}{UTF8}{kai}                       % 详情参阅CJK文件包
 \maketitle
 
+\section{个人信息}
+\cvdoubleitem{姓名}{陈龙}{性别}{男}
+\cvdoubleitem{年龄}{23(1991-02)}{现居地}{四川成都}
+\cvdoubleitem{毕业时间}{2013-6}{民族}{汉族}
+
 \section{教育背景}
 \cventry{2009年 -- 2013年}{数学与应用数学}{电子科技大学}{成都}{\textit{理学学士}}{2010年获三等奖学金}  % 第3到第6编码可留白
 
@@ -64,34 +69,58 @@
 
 \section{工作背景}
 \subsection{正式工作}
-\cventry{2013年3月 -- 2014年至今}{软件研发工程师}{成都神州通付科技有限公司}{成都}{}{%
+\cventry{2013年3月 -- 2014年至今}{软件研发工程师}{成都神州通付科技有限公司}{成都}{(领域：移动互联网O2O)}{%
 工作内容:%
 \begin{itemize}%
-    \item 提供App后端支持
-    \item 手机端以及后台系统协议制定与实现
-    \item 为项目提供数据支持
-    \item 车牌识别研究(基于OpenCV)
+    \item App后端以及后台系统协议制定与实现
+    \begin{itemize}%
+          \item 设计框架
+            \begin{itemize}
+                \item Java,DbUtils,Java NIO
+                \item 由消息中间件协调后端程序处理业务逻辑
+            \end{itemize}
+      \end{itemize}
     \item 编写后台管理系统
+    \begin{itemize}%
+          \item 设计框架
+            \begin{itemize}
+                \item PHP,Jquery,EasyUI,etc...
+                \item PHP链接消息中间件请求后端业务程序
+            \end{itemize}
+      \end{itemize}
+    \item 为项目提供数据支持,如抓取数据
+    \item 车牌识别研究(基于OpenCV)
 \end{itemize}}
 \subsection{实习全职}
-\cventry{2012年7月 -- 2013年2月}{软件研发工程师}{北京知行九易科技有限公司}{北京\&成都}{}{%
+\cventry{2012年7月 -- 2013年2月}{软件研发工程师}{北京知行九易科技有限公司}{北京\&成都}{(公司规模20人，开发共4人，领域：外贸电子商务)}{%
 工作内容:%
 \begin{itemize}%
     \item 电子商务供应链模块开发:
           \begin{itemize}%
               \item 设计框架
                 \begin{itemize}
-                    \item J2EE(SSH),EasyUI,jQuery,Maven;
-                    \item MQ消息中间件,工作流引擎,规则引擎;
-                    \item 项目采用敏捷开发方式;
+                    \item J2EE(SSH),EasyUI,jQuery,Maven
+                    \item MQ消息中间件(ActiveMQ),工作流引擎,规则引擎
+                    \item 项目采用敏捷开发方式
                 \end{itemize}
-              \item 持续时间,六个月;
+              \item 持续时间,六个月
               \item 完成情况
                 \begin{itemize}
-                    \item 完成采购相关流程,竞拍采购原型,部分前端页面编写;
+                    \item 开发共三人，于3m*3m会议室内开发，完成供应链中采购相关流程,竞拍采购原型,部分前端页面编码
                 \end{itemize}
           \end{itemize}
 \end{itemize}}
+
+\section{参与项目}
+\subsection{科技新闻抓取}
+科技新闻抓取和苹果新闻提取。
+\subsection{Tools4You}
+ Tools4You是根据原型Tools4Me而来，用于提供项目内部使用的常用工具集合的Java桌面程序，基于Swing图像界面开发
+\subsection{Web安全研究}
+ 由于在校期间的开发的\href{http://www.math.uestc.edu.cn}{数学学院官网网站}被黑客入侵，遂开始研究Web安全和渗透相关知识，对常见Web 安全问题如:SQL注入、XSS、XSRF等有了解，后因开发任务集中而较少关注安全，曾提交通达OA中邮件存在持久性XSS漏洞,可攻击收件人(WooYun-2013-25365) 等漏洞
+%\cvlistitem{其他}
+\subsection{WSO2中间件平台研究}
+于2012年暑假直到2013年12月跟随老师,学习\href{www.wso2.com}{WSO2}中间件平台,完成基于WSO2中间件平台的人力资源管理项目演示版,涉及WSO2中间件平台的Enterprise Service Bus,Data Service Bus 等
 
 \section{专业技能}
 \subsection{语言技能}
@@ -112,17 +141,6 @@
 \cvitem{\textsf{问题解决}}{能在较短时间内独立思考、周密分析问题并形成解决问题的思路}
 \cvitem{\textsf{学习能力}}{对新技术有浓厚的兴趣，有很强的自学能力}
 \cvitem{\textsf{团队合作}}{拥有良好的沟通能力，有很强的团队意识}
-
-\section{参与项目}
-\subsection{科技新闻抓取}
-科技新闻抓取和苹果新闻提取。
-\subsection{Tools4You}
- Tools4You是根据原型Tools4Me而来，用于提供项目内部使用的常用工具集合的Java桌面程序，基于Swing图像界面开发
-\subsection{Web安全研究}
- 由于在校期间的开发的\href{http://www.math.uestc.edu.cn}{数学学院官网网站}被黑客入侵，遂开始研究Web安全和渗透相关知识，对常见Web 安全问题如:SQL注入、XSS、XSRF等有了解，后因开发任务较少关注安全，曾提交通达OA中邮件存在持久性XSS漏洞,可攻击收件人(WooYun-2013-25365) 等漏洞
-%\cvlistitem{其他}
-\subsection{WSO2中间件平台研究}
-于2012年暑假直到2013年12月跟随老师,学习\href{www.wso2.com}{WSO2}中间件平台,完成基于WSO2中间件平台的人力资源管理项目演示版,涉及WSO2 中间件平台的Enterprise Service Bus,Data Service Bus 等
 
 %\subsection{项目}
 %\cvlistitem{项目项目项目}
