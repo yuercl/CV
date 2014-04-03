@@ -6,6 +6,8 @@ Introduction
 =============
 This is a repository containing my resume compiled in latex using a very nice modern theme. see example [http://www.ctan.org/tex-archive/macros/latex/contrib/moderncv/examples](http://www.ctan.org/tex-archive/macros/latex/contrib/moderncv/examples "ctex example")
 
+Linkedin Site [http://cn.linkedin.com/pub/chen-long/94/460/233	](http://cn.linkedin.com/pub/chen-long/94/460/233 "http://cn.linkedin.com/pub/chen-long/94/460/233")
+
 Prerequisites
 =============
 
